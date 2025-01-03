@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: linear-gradient(#2C3156, #1b1a33);
+    overflow-y: hidden;
+}
+
+.container {
+    height: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    height: 100%;
+}
+
+.logo {
+    top: 20px;
+    width: 100px;
+}
+
+.logo img {
+    margin-top: 75px;
+    width: 250px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(177, 217, 243);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 2%; /* Ajusta o padding para telas menores */
+    }
+
+    .logo img {
+        width: 200px; /* Ajusta o tamanho da logo para telas menores */
+        margin-top: 50px; /* Ajusta o espaçamento da logo */
+    }
+
+    nav ul {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    nav ul li {
+        padding: 10px 0; /* Aumenta o espaço entre os itens */
+        font-size: 18px; /* Reduz o tamanho da fonte */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 150px; /* Diminui ainda mais o tamanho da logo em telas menores */
+    }
+
+    nav ul li {
+        font-size: 16px; /* Diminui ainda mais o tamanho da fonte */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 120px; /* Diminui o tamanho da logo em telas muito pequenas */
+    }
+
+    nav ul li {
+        font-size: 14px; /* Ajusta o tamanho da fonte para telas muito pequenas */
+        padding: 5px 0; /* Ajusta o padding para otimizar a visualização */
+    }
+}
